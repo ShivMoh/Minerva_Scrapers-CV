@@ -43,6 +43,7 @@ def initiate_update():
 @app.route("/get_latest_version", methods=['GET'])
 def get_latest_version():
     directories = os.listdir("./runs/detect")
+    if (len(directories)) == 0: return None
     return len(directories) - 1
 
 # does not currently work
@@ -135,7 +136,12 @@ def annotate_image():
             "error" : "An error occurred when reading the image"
         }
 
-    model = YOLO(f"./runs/detect/train{get_latest_version()}/weights/best.pt")
+    version = get_latest_version()
+    if version == None: return {
+        "error" : "No models found. Please contact your server adminstrator"
+    }
+
+    model = YOLO(f"./runs/detect/train{version}/weights/best.pt")
     
     results = model(full_path)
 
