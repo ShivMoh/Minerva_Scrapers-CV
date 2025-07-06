@@ -20,7 +20,7 @@ if __name__ == "__main__":
             continue
 
         response_formatter.format_responses()
-        # response_formatter.send_responses()
+        response_formatter.send_responses()
 
         # data is refreshed every day
         time.sleep(WAIT_TIME)
