@@ -8,7 +8,7 @@ This project is just one repository from a system of microservices that create M
 
 ## To Run
 
-Install necessary dependencies and run, each in a separate termial and port
+Install necessary dependencies and run, each in a separate terminal and port
 ```
 python ./fb_module/api.py # runs on port 5000
 ```
