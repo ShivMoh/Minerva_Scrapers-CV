@@ -1,6 +1,6 @@
 ## Overview
 
-This project is just one repository from a system of microservices that create Minerva, a data platform solution that aims to promote Health, Safety, Security and Environment regulations in Guyana. The other projects are located at:
+This project is just one repository from a system of microservices that create Minerva, a data platform solution that aims to promote Health, Safety, Security and Environment regulations in Guyana. It was created for a hackathon. The other projects are located at:
 
 - https://github.com/shomari11/Minerva_Whatsapp | A Whatsapp bot for reporting
 - https://github.com/AndrewGY/Minerva | The Main App for User Interaction
